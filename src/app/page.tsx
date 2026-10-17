@@ -1,6 +1,8 @@
 import { Product } from "@/lib/utils";
 import Hero from "@/components/Hero";
 import PriceRisers from "@/components/PriceRisers";
+import PriceFallers from "@/components/PriceFallers";
+
 
 async function getProducts(): Promise<Product[]> {
   const res =await fetch("https://api.api-store.workers.dev/api/bazardor/products",{
@@ -18,6 +20,7 @@ export default async function HomePage() {
     <>
       <Hero />
       <PriceRisers products={products} />
+      <PriceFallers products={products}/>
       
     </>
   );
