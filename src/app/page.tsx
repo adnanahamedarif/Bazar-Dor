@@ -2,6 +2,7 @@ import { Product } from "@/lib/utils";
 import Hero from "@/components/Hero";
 import PriceRisers from "@/components/PriceRisers";
 import PriceFallers from "@/components/PriceFallers";
+import AllProducts from "@/components/AllProducts";
 
 
 async function getProducts(): Promise<Product[]> {
@@ -21,6 +22,7 @@ export default async function HomePage() {
       <Hero />
       <PriceRisers products={products} />
       <PriceFallers products={products}/>
+      <AllProducts products={products}/>
       
     </>
   );
