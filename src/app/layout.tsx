@@ -20,14 +20,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="bn"
       data-theme="light"
-      className={`${notoSerifBengali.className} h-full antialiased bg-[#dfe8df]`}
+      className={`${notoSerifBengali.className} h-full antialiased bg-[#dfe8df] `}
     >
       <body className="min-h-full flex flex-col">
         <Header />
         <Marquee/>
 
 
-        <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-6">
+        <main className=" mx-auto w-full max-w-5xl flex-1 px-4 pb-6">
           
           {children}
         </main>
