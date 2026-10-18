@@ -1,6 +1,7 @@
 'use client'
 
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import toast from "react-hot-toast";
 
 
@@ -119,14 +120,16 @@ const SignUpPage = () => {
                     </div>
 
                     <div className="text-center text-sm mt-4">
-                        অ্যাকাউন্ট আছে? <a href="#" className="text-green-700 font-medium hover:underline">সাইন ইন করুন</a>
+                        অ্যাকাউন্ট আছে? <a href="/signin" className="text-green-700 font-medium hover:underline">সাইন ইন করুন</a>
                     </div>
                 </fieldset>
             </form>
 
-            <div className="text-xs text-base-content/60 mt-6">
-                ← হোম পেজে ফিরে যান
-            </div>
+            <Link href="/">
+    <div className="text-xs text-base-content/60 mt-6">
+        ← হোম পেজে ফিরে যান
+    </div>
+</Link>
         </div>
     );
 };
