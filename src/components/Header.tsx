@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { connection } from 'next/server';
 import Navlink from './Navlink';
+import UserInfo from './UserInfo';
 
 const Header = async () => {
     await connection();
@@ -26,8 +27,10 @@ const Header = async () => {
                         </p>
                     </div>
                 </Link>
-            </div>
-            
+
+                <UserInfo/>
+                    </div>
+
             <div className="mx-auto max-w-5xl px-4">
                 <Navlink />
             </div>
