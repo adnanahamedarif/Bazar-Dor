@@ -1,3 +1,5 @@
+    "use cache";
+
 import Link from "next/link";
 import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
