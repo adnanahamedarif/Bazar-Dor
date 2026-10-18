@@ -9,7 +9,7 @@ const SignUpPage = () => {
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         const formData = new FormData(e.currentTarget)
-       const name = String(formData.get("name") ?? "")
+        const name = String(formData.get("name") ?? "")
         const email = String(formData.get("email") ?? "")
         const password = String(formData.get("password") ?? "")
         const confirmPassword = String(formData.get("confirmPassword") ?? "")
@@ -44,17 +44,18 @@ const SignUpPage = () => {
 
 
     const handelGoogleSignUp = async () => {
-        const data = await authClient.signIn.social({
+        await authClient.signIn.social({
             provider: "google",
             callbackURL: "/",
+        });
+    };
 
-        });
-    }
     const handelGitHubSignUp = async () => {
-        const data = await authClient.signIn.social({
+        await authClient.signIn.social({
             provider: "github",
+            callbackURL: "/",
         });
-    }
+    };
 
 
     return (
@@ -128,10 +129,10 @@ const SignUpPage = () => {
             </form>
 
             <Link href="/">
-    <div className="text-xs text-base-content/60 mt-6">
-        ← হোম পেজে ফিরে যান
-    </div>
-</Link>
+                <div className="text-xs text-base-content/60 mt-6">
+                    ← হোম পেজে ফিরে যান
+                </div>
+            </Link>
         </div>
     );
 };
