@@ -30,14 +30,13 @@ const SignUpPage = () => {
 
 
         if (data) {
-            toast.success("Sign Up successfull! ")
-
+            toast.success("রেজিস্ট্রেশন সফল!")
 
         }
 
 
         if (error) {
-            toast.error(error.message ?? "An error occurred")
+            toast.error(error.message ?? "রেজিস্ট্রেশন ব্যর্থ!")
         }
 
     }

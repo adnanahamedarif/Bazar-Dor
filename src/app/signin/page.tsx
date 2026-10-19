@@ -25,7 +25,7 @@ const SignInPage = () => {
 
 
         if (data) {
-            toast.success("Sign In successfull! ")
+            toast.success("সাইন ইন সফল!")
 
             console.log(data);
 
@@ -34,7 +34,7 @@ const SignInPage = () => {
 
 
         if (error) {
-            toast.error(error.message ?? "Sign-in failed")
+            toast.error(error.message ?? "সাইন ইন ব্যর্থ!")
             console.log(error);
             return;
 

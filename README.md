@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# বাজার দর (Bazar Dor)
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## A Bangla web app for tracking the daily prices of everyday essentials across Bangladesh's markets. Browse products by category, see which prices went up or down today, compare prices market by market, and sign in to view full details.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p align="center">
+  <img src="./bazar-dor-preview.png" alt="Bazar Dor preview" width="100%" />
+</p>
+Live site: https://adnan-bazar-dor.vercel.app/
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+- **Daily price ticker** — quickly spot products whose prices increased or decreased.
+- **Price trends** — separate sections for products with rising and falling prices.
+- **Browse by category** — explore products and sort prices from low to high or high to low.
+- **Product price details** — view minimum, maximum, and average prices.
+- **Market-wise comparison** — compare prices across markets and divisions.
+- **Historical comparison** — compare today’s prices with yesterday, last week, and last month.
+- **Secure sign in** — create an account or sign in to access protected product details.
+- **Profile management** — view account information and update your name.
+- **Responsive Bangla interface** — Bangla labels, digits, and units for a familiar local experience.
+- **Helpful loading and error states** — loading skeletons and a custom 404 page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧰 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Technology | Purpose |
+|---|---|
+| Next.js 16 (App Router)| Web application |
+| TypeScript | Type-safe code |
+| Tailwind CSS + DaisyUI | Styling and UI |
+| Better Auth | Authentication |
+| MongoDB Atlas | Database |
+| React Marquee Text | Scrolling price ticker |
+| React Hot Toast | Notifications |
+| Vercel | Deployment |
+
+
+
+---
+
+
