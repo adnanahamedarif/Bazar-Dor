@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 
 const AllProducts = ({ products }: { products: Product[] }) => {
     return (
-        <section id='সব পণ্য' className='px-4 py-6'>
+        <section id='all-products' className='px-4 py-6'>
             <div className="mb-4">
                 <h2 className="text-xl font-bold text-gray-900">সব পণ্য</h2>
                 <p className="text-sm text-gray-500">

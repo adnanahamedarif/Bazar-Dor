@@ -73,11 +73,11 @@ const UserInfo = () => {
 
                 </div> :  <div>
                    <Link href={'/signin'}>
-                    <button className='border border-green-700 rounded-xl m-4 px-4 py-2 font-bold'>
+                    <button className='border border-green-700 rounded-xl m-4 px-4 py-2 font-bold cursor-pointer'>
                     সাইন ইন
                 </button></Link>
                 <Link href={'/signup'}>
-                      <button className='bg-green-700 rounded-xl  px-4 py-2 text-white font-bold'>
+                      <button className='bg-green-700 rounded-xl  px-4 py-2 text-white font-bold cursor-pointer'>
                     সাইন আপ
                 </button>
                 </Link>

@@ -29,9 +29,9 @@ const Hero = () => {
                         এবং দামের পরিবর্তন এক জায়গায়।
                     </p>
 
-                    <Link href="/products" className="btn mt-7 min-h-10 border-0 bg-green-700 px-6 text-white shadow-md hover:bg-green-800" >
-                        সব পণ্য দেখুন
-                    </Link>
+                   <Link href="#all-products" className="btn mt-7 min-h-10 border-0 bg-green-700 px-6 text-white shadow-md hover:bg-green-800">
+    সব পণ্য দেখুন
+</Link>
 
                 </div>
 

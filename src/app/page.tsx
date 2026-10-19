@@ -25,7 +25,7 @@ export default async function HomePage() {
       </Suspense>
       <PriceRisers products={products} />
       <PriceFallers products={products} />
-      <AllProducts products={products} />
+      < AllProducts products={products} />
 
     </>
   );
