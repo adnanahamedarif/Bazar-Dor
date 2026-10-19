@@ -1,8 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { authClient } from "@/lib/auth-client";
+import { useState } from "react";
 
 const ProfilePage = () => {
     const router = useRouter();
@@ -15,6 +16,7 @@ const ProfilePage = () => {
         const newUserData = Object.fromEntries(formData.entries()) as {
             name: string;
         };
+
 
         const name = newUserData.name.trim();
         if (!name) {
@@ -54,7 +56,10 @@ const ProfilePage = () => {
         );
     }
 
-    if (!user) return null; 
+    if (!user) 
+    {
+        redirect('/signin')
+    }
 
     return (
         <section className="mx-auto max-w-3xl px-4 py-8">
